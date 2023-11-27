@@ -35,9 +35,9 @@ nav,
 }
 
 nav {
-    justify-content: space-around;
-    align-items: center;  
-    height: 17vh;
+    justify-content: space-around; /* define cómo el navegador distribuye el espacio entre y alrededor de los items flex, a lo largo del eje principal de su contenedor. 
+    align-items: center;  /* controla la alineación de todos los elementos en el eje transversal */
+    height: 17vh; /* “viewport height” (altura de la ventana gráfica), que es la altura de la pantalla visible. */
 }
 
 .nav-links {

@@ -41,21 +41,21 @@ nav {
 }
 
 .nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
+    gap: 2rem; /* especifica el tamaño de las canaletas, que es el espacio entre filas y columnas dentro de la cuadrícula, flexión y diseño de múltiples columnas. */ /* rem «el tamaño de letra del elemento raíz». */
+    list-style: none; /* permite definir de golpe todos los parámetros */ /* list-style-type : Establece el tipo de viñetas para la lista */
+    font-size: 1.5rem; /* especifica la dimensión de la letra. */
 }
 
 a {
     color: black;
-    text-decoration: none;
-    text-decoration-color: white;  
+    text-decoration: none; /*  se usa para establecer el formato de texto a subrayado ( underline ) y suprarrayado ( overline ), tachado ( line-through ) o parpadeo ( blink ) */
+    text-decoration-color: white; /* establece el color usado cuando se dibujan subrayados o líneas a través del texto, especificadas por la propiedad text-decoration-line. */
 }
 
-a:hover {
+a:hover { /*  nos permite establecer un segundo estado a cualquier elemento, cuándo un usuario interactúa con este, por ejemplo, al pasar el cursor encima. */
     color: grey;
     text-decoration: underline;
-    text-underline-offset: 1rem;
+    text-underline-offset: 1rem; /*  establecer la distancia del trazo del subrayado respecto al texto */
     text-decoration-color: rgb(181, 181, 181);
 }
 
@@ -64,34 +64,34 @@ a:hover {
 }
 
 .logo:hover {
-    cursor: default;
+    cursor: default; /* especifica el tipo de cursor que se mostrara cuando este se encuentre sobre un elemento. */
 }
 
 /* HAMBURGER MENU */
 
 #hamburger-nav {
-    display: none;
+    display: none; /* Además de los Diferentes Tipos de caja de Visualizacion, el valor de none permite Desactivar la Visualizacion DE UN Elemento; cuando no se utiliza none , todos los elementos descendentes también quedan desactivados. */
 }
 
 .hamburger-menu {
-    position: relative;
-    display: inline-block;
+    position: relative; /* especifica cómo un elemento es posicionado en el documento. /* En position: relative , el elemento está posicionado Relativo a sí mismo. */
+    display: inline-block; /* Los " display: inline-block; " Ocupan todo el tamaño del contenido y permite posicionar más elementos a la derecha. */
 }
 
 .hamburger-icon {
     display: flex;
-    flex-direction: column;
-    justify-content:space-between;
+    flex-dircetion: column;
+    justify-content:space-between; /* especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés) */
     height: 24px;
     width: 30px;
-    cursor: pointer;
+    cursor: pointer; /* pointer: comprueba si el usuario tiene un dispositivo de puntero (como el ratón), y si es así, cuán preciso es el dispositivo de puntero primario. */
 }
 
 .hamburger-icon span {
     width: 100%;
     height: 2px;
-    background-color: black;
-    transition: all 0.3 ease-in-out;
+    background-color: black; /* define el color de fondo de un elemento, puede ser el valor de un color o la palabra clave transparent */
+    transition: all 0.3 ease-in-out; /* transition: proporcionan una forma de animar los cambios de las propiedades CSS, en lugar de que los cambios surtan efecto de manera instantánea. */ /* ease-out iniciará la animación a toda velocidad, luego terminará lentamente. ease-in-out comenzará lentamente, será más rápido en el medio de la animación y luego terminará lentamente. */ 
 }
 
 .menu-links {

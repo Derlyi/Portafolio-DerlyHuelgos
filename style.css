@@ -19,7 +19,6 @@ p {
     color: rgb(85, 85, 85);
 }
 
-
 /* TRANSITION */
 
 a,
@@ -131,8 +130,12 @@ a:hover { /*  nos permite establecer un segundo estado a cualquier elemento, cu�
     opacity: 0; /* define la transparencia de un elemento, esto es, en qué grado se superpone el fondo al elemento. */
 }
 
+.hamburger-icon.open span:last-child {
+    transform: rotate (-45deg) translate(10px, -5px);
+}
+
 .hamburger-icon span:first-child {
-    transform: none;
+    opacity: none;
 }
 
 .hamburger-icon span:first-child {
@@ -185,6 +188,7 @@ section {
 .section_text_p1 {
     text-align: center;
 }
+
 .section_text_p2 {
     font-size: 1.75rem;
     margin-bottom: 1rem; /* establece el espacio requerido en la parte inferior de un elemento. Tambien se permiten valores negativos. */
@@ -230,7 +234,12 @@ section {
     border: rgb(53, 53, 53) 0.1rem solid;
 }
 
-.btn-color-1
+.btn-color-1:hover,
+.btn-color-2:hover {
+    cursor: pointer;
+}
+    
+.btn-color-1,
 .btn-color-2:hover {
     background: rgb(0, 0, 0); /* es un atajo para definir los valores individuales del fondo en una única regla CSS. */
     color: white;
@@ -251,3 +260,6 @@ section {
 .btn-container {
     gap: 1rem;
 }
+
+/* ABOUT SECTION */
+

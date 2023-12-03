@@ -241,12 +241,12 @@ section {
     
 .btn-color-1,
 .btn-color-2:hover {
-    background: rgb(0, 0, 0); /* es un atajo para definir los valores individuales del fondo en una única regla CSS. */
+    background: rgb(0, 0, 0); /* Es un atajo para definir los valores individuales del fondo en una única regla CSS. */
     color: white;
 }
 
 .btn-color-1:hover {
-    background: none;
+    background: none; /* es un atajo para definir los valores individuales del fondo en una única regla CSS. */
 }
 
 .btn-color-2{
@@ -264,38 +264,38 @@ section {
 /* ABOUT SECTION */
 
 #about {
-    position: relative;
+    position: relative; /* En position: relative , el elemento está posicionado Relativo a sí mismo. */
 }
 
 .about-containers {
     gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 2rem; /* establece el espacio requerido en la parte inferior de un elemento. */
+    margin-top: 2rem; /* establece el margen superior de un elemento especificando una longitud o un porcentaje. */
 }
 
 .about-details-container {
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* especifica cómo colocar los objetos flexibles en el contenedor flexible definiendo el eje principal y la dirección (normal o al revés). */
 }
 
 .about-containers,
 .about-details-container {
-    display: flex;
+    display: flex; /* ayuda a colocar las cajas como si fueran celdas de tablas, con un comportamiento predecible y adaptable. */
 }
 
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 2rem; /* Esto creará esquinas curveadas en el elemento. */ /* rem:  «el tamaño de letra del elemento raíz». Esto significa que el tamaño de letra no aumenta en cada nivel sucesivo de anidamiento */
 }
 
 .arrow {
-    position: absolute;
-    right: -5rem;
-    bottom: 2.5rem;
+    position: absolute; /* Un elemento con position: absolute se elimina del flujo normal de documentos. Se posiciona automáticamente en el punto de inicio (top-left esquina) de su elemento padre. */
+    right: -5rem; /* especifica parte de la posición de un elemento */
+    bottom: 2.5rem; /* especifica la distancia a la que se mueve el borde inferior del elemento con respecto a su posición normal. */
 }
 
 .details-container {
-    padding: 1.5rem;
-    flex: 1;
+    padding: 1.5rem; /* establece el área de relleno en los cuatro lados de un elemento a la vez. */
+    flex: 1; /* indica la capacidad de un elemento flexible para alterar sus dimensiones y llenar el espacio disponible. */
     background: white;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
@@ -304,14 +304,14 @@ section {
 }
 
 .section-container {
-    gap: 4rem;
-    height: 80%;
+    gap: 4rem; /* Es el ancho del canal que separa las columnas de la grilla. */
+    height: 80%; /* especifica la altura de un elemento. */
 }
 
 .section_pic-container {
     height: 400px;
-    width: 400px;
-    margin: auto 0;
+    width: 400px; /* establece el ancho de un elemento. */
+    margin: auto 0; /* se utiliza para establecer los márgenes superior e inferior de un elemento en automático y el margen izquierdo en cero. */
 }
 
 /* EXPERIENCE SECTION */
@@ -321,25 +321,25 @@ section {
 }
 
 .experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
+    color: rgb(85, 85, 85); /* se utiliza para establecer el color del texto dentro de un elemento en CSS. */
+    font-weight: 600; /* se utiliza para establecer el grosor o peso de la fuente de un elemento en CSS. En este caso, el valor 600 representa un grosor seminegrita. */
+    font-size: 1.75rem; /* se utiliza para establecer el tamaño de la fuente de un elemento en CSS. En este caso, el valor 1.75rem indica que el tamaño de la fuente será de 1.75 veces el tamaño de la fuente base del documento. */
+    margin-bottom: 2rem; /* rem: "root em" y se refiere al tamaño de la fuente raíz del documento. El valor 1rem es igual al tamaño de la fuente raíz, y cualquier valor mayor o menor que 1rem se basará en ese tamaño. */
 }
 
 .experience-details-container {
-    display: flex;
+    display: flex; /* se utiliza para establecer un contenedor como un contenedor flexible. Esto permite aplicar el modelo de diseño de caja flexible, también conocido como Flexbox, a los elementos hijos dentro del contenedor. */
     justify-content: center;
-    flex-direction: column;
+    flex-direction: column; /* se utiliza para establecer la dirección de los elementos dentro de un contenedor flexible en CSS. */
 }
 
 .article-container {
     display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
+    text-align: initial; /* establece la alineación del texto de un elemento en su valor inicial predeterminado. El valor inicial depende del elemento y puede variar. */
+    flex-wrap: wrap; /* se utiliza para controlar si los elementos flexibles dentro de un contenedor deben envolverse en varias líneas o permanecer en una sola línea. */
+    flex-direction: row; /* se utiliza para establecer la dirección en la que se colocan los elementos flexibles dentro de un contenedor. Cuando se aplica flex-direction: row, los elementos se colocan en una fila horizontal, de izquierda a derecha. */
+    gap: 2.5rem; /* se utiliza para establecer el espacio entre los elementos de una cuadrícula o una disposición de elementos en CSS. */
+    justify-content: space-around; /* se utiliza para distribuir el espacio disponible de manera uniforme alrededor de los elementos flexibles dentro de un contenedor en la dirección principal */
 }
 
 article {
@@ -350,7 +350,7 @@ article {
 }
 
 article .icon {
-    cursor: default;
+    cursor: default; /* se utiliza para establecer el estilo predeterminado del cursor cuando se encuentra sobre un elemento en una página web. */
 }
 
 /* PROJECTS SECTION */
@@ -365,7 +365,7 @@ article .icon {
 }
 
 .project-img {
-    border-radius: 2rem;
+    border-radius: 2rem; /* las esquinas del elemento se redondean con un radio de 2 rem (unidades relativas a la fuente). */
     width: 90%;
     height: 90%;
 }
@@ -386,7 +386,7 @@ article .icon {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 70vh;
+    height: 70vh; /* se utiliza para establecer la altura de un elemento en relación con el tamaño de la ventana gráfica (viewport) del navegador. */
 }
 
 .contact-info-upper-container {
@@ -402,7 +402,7 @@ article .icon {
 
 .contact-info-container {
     display: flex;
-    align-items: center;
+    align-items: center; /* e utiliza para alinear verticalmente los elementos dentro de un contenedor en CSS. */
     justify-content: center;
     gap: 0.5rem;
     margin: 1rem;
